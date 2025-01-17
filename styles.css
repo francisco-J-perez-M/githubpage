@@ -1,0 +1,176 @@
+/* Configuración global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Negro profundo */
+    color: #E8F5E9; /* Verde pálido */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Encabezado como tarjeta */
+header {
+    background-color: #1B5E20; /* Verde oscuro */
+    color: #E8F5E9; /* Verde pálido */
+    padding: 2rem;
+    text-align: center;
+    border: 3px solid #388E3C; /* Verde medio */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra */
+    width: 90%;
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 1rem 0 0;
+    opacity: 0.9;
+}
+
+/* Navegación */
+nav {
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A5D6A7; /* Verde claro */
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #388E3C; /* Verde medio */
+    border-color: #66BB6A; /* Verde claro */
+    color: #FFFFFF; /* Blanco */
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #1E1E1E; /* Negro suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Sombra */
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #66BB6A; /* Verde claro */
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #388E3C; /* Verde medio */
+    margin-top: 0.5rem;
+}
+
+p {
+    color: #B9F6CA; /* Verde muy claro */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #2E7D32; /* Verde apagado */
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: #E8F5E9; /* Verde pálido */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+ul li::before {
+    content: '✔';
+    color: #66BB6A; /* Verde claro */
+    font-size: 1.2rem;
+}
+
+/* Enlaces */
+a {
+    color: #81C784; /* Verde suave */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #A5D6A7; /* Verde más claro */
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background: #1B5E20; /* Verde oscuro */
+    color: #E8F5E9; /* Verde pálido */
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-top: 4px solid #388E3C; /* Verde medio */
+    width: 100%;
+}
+
+/* Adaptabilidad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
